@@ -12,7 +12,9 @@ Group:		X11/Applications
 Source0:	http://dl.sourceforge.net/openvpnadmin/%{name}-%{version}b.tar.gz
 # Source0-md5:	34899a0d7b6532684897001d8cf8b349
 URL:		http://sourceforge.net/projects/openvpnadmin/
-BuildRequires:	mono
+BuildRequires:	mono-csharp
+BuildRequires:	dotnet-gtk-sharp2-devel
+BuildRequires:	perl-XML-Parser
 Requires:	gksu
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
