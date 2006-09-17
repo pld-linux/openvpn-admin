@@ -10,7 +10,7 @@ Release:	0.1
 License:	LGPL
 Group:		X11/Applications
 Source0:	http://dl.sourceforge.net/openvpnadmin/%{name}-%{version}b.tar.gz
-# Source0-md5:	f107cec5cf60e6d60e458675fb0cc9e6
+# Source0-md5:	34899a0d7b6532684897001d8cf8b349
 URL:		http://sourceforge.net/projects/openvpnadmin/
 BuildRequires:	mono
 Requires:	gksu
