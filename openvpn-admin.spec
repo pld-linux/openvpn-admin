@@ -12,15 +12,17 @@ Group:		X11/Applications
 Source0:	http://dl.sourceforge.net/openvpnadmin/%{name}-%{version}b.tar.gz
 # Source0-md5:	34899a0d7b6532684897001d8cf8b349
 URL:		http://sourceforge.net/projects/openvpnadmin/
-BuildRequires:	mono-csharp
 BuildRequires:	dotnet-gtk-sharp2-devel
+BuildRequires:	mono-csharp
 BuildRequires:	perl-XML-Parser
 Requires:	gksu
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
+GUI for OpenVPN.
 
 %description -l pl
+Graficzny interfejs dla OpenVPN.
 
 %prep
 %setup -q
@@ -43,10 +45,9 @@ rm -rf $RPM_BUILD_ROOT
 %files -f %{name}.lang
 %defattr(644,root,root,755)
 %doc AUTHORS ChangeLog NEWS TODO
-%{_sysconfdir}/pam.d/%{name}
-%{_sysconfdir}/security/console.apps/%{name}
-%dir %{_libdir}/%{name}/
-%{_libdir}/%{name}/
 %attr(755,root,root) %{_sbindir}/*
+/etc/pam.d/%{name}
+/etc/security/console.apps/%{name}
+%{_libdir}/%{name}
 %{_desktopdir}/%{name}.desktop
 %{_pixmapsdir}/%{name}.png
