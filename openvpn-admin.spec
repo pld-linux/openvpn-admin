@@ -3,7 +3,7 @@
 # - find R and BR's (don't know how in C# :/)
 #
 Summary:	GUI for OpenVPN
-Summary(pl):	Graficzny interfejs dla OpenVPN
+Summary(pl.UTF-8):   Graficzny interfejs dla OpenVPN
 Name:		openvpn-admin
 Version:	1.9.3
 Release:	0.1
@@ -21,7 +21,7 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 GUI for OpenVPN.
 
-%description -l pl
+%description -l pl.UTF-8
 Graficzny interfejs dla OpenVPN.
 
 %prep
