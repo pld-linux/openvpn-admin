@@ -5,13 +5,13 @@
 Summary:	GUI for OpenVPN
 Summary(pl.UTF-8):	Graficzny interfejs dla OpenVPN
 Name:		openvpn-admin
-Version:	1.9.3
+Version:	1.9.4
 Release:	0.1
 License:	LGPL
 Group:		X11/Applications
-Source0:	http://dl.sourceforge.net/openvpnadmin/%{name}-%{version}b.tar.gz
-# Source0-md5:	34899a0d7b6532684897001d8cf8b349
-URL:		http://sourceforge.net/projects/openvpnadmin/
+Source0:	http://dl.sourceforge.net/openvpn-admin/%{name}-%{version}-2.tar.gz
+# Source0-md5:	e8cbda2384f4a2f8ce40c994272ccf41
+URL:		http://sourceforge.net/projects/openvpn-admin/
 BuildRequires:	dotnet-gtk-sharp2-devel
 BuildRequires:	mono-csharp
 BuildRequires:	perl-XML-Parser
